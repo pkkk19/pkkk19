@@ -1,0 +1,6 @@
+- 👋 Hi, I’m @pkkk19
+- 👀 I’m interested in App Development
+- 🌱 I’m currently learning dart
+- 💞️ I’m looking to collaborate on multi-platform mobile application
+- 📫 How to reach me:
+-          1. Discord: pkkk#7034
