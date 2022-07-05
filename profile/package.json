@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "npm": "^8.13.2",
+    "react-typed": "^1.2.0"
+  }
+}
