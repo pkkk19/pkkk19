@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import profile from './assets/img/profile-img.jpg';
+import CVPhoto from './assets/img/CV.png';
+import CV from './assets/files/Prabesh-Kumar-Shrestha-cv.pdf';
 import './assets/css/style.css';
-import Image from 'react-bootstrap/Image';
-import ProgressBar from 'react-bootstrap/ProgressBar'
+import {Image, ProgressBar} from 'react-bootstrap';
 import Typed from "react-typed";
-import 'mdb-react-ui-kit/dist/css/mdb.min.css'
+import { FaTwitter, FaFacebookF, FaInstagram, FaDiscord, FaLinkedinIn, FaListUl, FaHome, FaUser, FaFile, FaArrowUp } from "react-icons/fa";
 
 
 export default class 
@@ -12,7 +14,7 @@ export default class
   render() {
     return (
       <div>
-        <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+        <button class="mobile-nav-toggle d-xl-none"><FaListUl/></button>
         <header id="header">
     <div class="d-flex flex-column">
 
@@ -21,24 +23,25 @@ export default class
         <h1 class="text-light"><a href="">Prabesh Kumar</a></h1>
         <h1 class="text-light"><a href="">Shrestha</a></h1>
         <div class="social-links mt-3 text-center">
-          <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-          <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-          <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-          <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+          <a href="#" class="twitter"><FaTwitter/></a>
+          <a href="#" class="facebook"><FaFacebookF/></a>
+          <a href="#" class="instagram"><FaInstagram/></a>
+          <a href="#" class="discord"><FaDiscord/></a>
+          <a href="#" class="linkedin"><FaLinkedinIn/></a>
         </div>
       </div>
 
       <nav id="navbar" class="nav-menu navbar">
         <ul>
-          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
-          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
-          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
+          <li><a href="#hero" class="nav-link scrollto active"><FaHome/> <span>&nbsp;&nbsp;Home</span></a></li>
+          <li><a href="#about" class="nav-link scrollto">< FaUser/> <span>&nbsp;&nbsp;About</span></a></li>
+          <li><a href="#resume" class="nav-link scrollto"><FaFile/> <span>&nbsp;&nbsp;Resume</span></a></li>
           <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
           <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a></li>
           <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
         </ul>
-      </nav>{/* Nav bar */}
+      </nav>
+      {/* Nav bar */}
     </div>
   </header>
 
@@ -177,8 +180,26 @@ export default class
     </section>
     {/* -- End Skills Section -- */}
 
+    {/* -- ======= Resume Section ======= -- */}
+    <section id="resume" class="resume">
+      <div class="container">
+
+        <div class="section-title">
+        <a href={ CV } download>Click to download</a>
+          <h2>Resume</h2>
+          <img src={CVPhoto} className="Resume"></img>
+        </div>
+
+      </div>
+    </section>
+    {/* -- End Resume Section -- */}
+
   </main>
   {/* End #main */}
+
+  
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><FaArrowUp/></a>
 
       </div>
     )
