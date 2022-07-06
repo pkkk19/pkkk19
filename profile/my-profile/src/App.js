@@ -6,43 +6,54 @@ import CV from './assets/files/Prabesh-Kumar-Shrestha-cv.pdf';
 import './assets/css/style.css';
 import {Image, ProgressBar} from 'react-bootstrap';
 import Typed from "react-typed";
-import { FaTwitter, FaFacebookF, FaInstagram, FaDiscord, FaLinkedinIn, FaListUl, FaHome, FaUser, FaFile, FaArrowUp } from "react-icons/fa";
-
+import { FaTwitter, FaFacebookF, FaInstagram, FaDiscord, FaLinkedinIn, FaListUl, FaHome, FaUser, FaFile, FaCode, FaServer, FaAngleRight, FaArrowUp } from "react-icons/fa";
+import { BsEnvelope } from "react-icons/bs";
 
 export default class 
  extends Component {
+
+  state = { clicked: false}
+
+  handelClick = () => {
+    this.setState({ clicked: !this.state.clicked })
+  }
+
   render() {
+    
     return (
-      <div>
-        <button class="mobile-nav-toggle d-xl-none"><FaListUl/></button>
+      
+      <div className={this.state.clicked ? 'mobile-nav-active' : ''}>
         <header id="header">
-    <div class="d-flex flex-column">
+       
+        <button className={this.state.clicked ? 'bi mobile-nav-toggle d-xl-none-bi-x' : "bi mobile-nav-toggle d-xl-none bi-list"} onClick={this.handelClick}><i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i></button>
+        
+        <div class="d-flex flex-column">
+<div class="profile">
+  <Image src={profile} fluid roundedCircle/>
+  <h1 class="text-light"><a href="">Prabesh Kumar</a></h1>
+  <h1 class="text-light"><a href="">Shrestha</a></h1>
+  <div class="social-links mt-3 text-center">
+    <a href="#" class="twitter"><FaTwitter/></a>
+    <a href="#" class="facebook"><FaFacebookF/></a>
+    <a href="#" class="instagram"><FaInstagram/></a>
+    <a href="#" class="discord"><FaDiscord/></a>
+    <a href="#" class="linkedin"><FaLinkedinIn/></a>
+  </div>
+</div>
 
-      <div class="profile">
-        <Image src={profile} fluid roundedCircle></Image>
-        <h1 class="text-light"><a href="">Prabesh Kumar</a></h1>
-        <h1 class="text-light"><a href="">Shrestha</a></h1>
-        <div class="social-links mt-3 text-center">
-          <a href="#" class="twitter"><FaTwitter/></a>
-          <a href="#" class="facebook"><FaFacebookF/></a>
-          <a href="#" class="instagram"><FaInstagram/></a>
-          <a href="#" class="discord"><FaDiscord/></a>
-          <a href="#" class="linkedin"><FaLinkedinIn/></a>
-        </div>
-      </div>
+<nav id="navbar" className= "nav-menu navbar">
+  <ul>
+    <li><a href="#hero" class="nav-link scrollto active"><FaHome/> <span>&nbsp;&nbsp;Home</span></a></li>
+    <li><a href="#about" class="nav-link scrollto">< FaUser/> <span>&nbsp;&nbsp;About</span></a></li>
+    <li><a href="#resume" class="nav-link scrollto"><FaFile/> <span>&nbsp;&nbsp;Resume</span></a></li>
+    <li><a href="#portfolio" class="nav-link scrollto"><FaCode/> <span>&nbsp;&nbsp;Portfolio</span></a></li>
+    <li><a href="#services" class="nav-link scrollto"><FaServer/> <span>&nbsp;&nbsp;Services</span></a></li>
+    <li><a href="#contact" class="nav-link scrollto"><BsEnvelope/> <span>&nbsp;&nbsp;Contact</span></a></li>
+  </ul>
+</nav>
+{/* Nav bar */}
+</div>
 
-      <nav id="navbar" class="nav-menu navbar">
-        <ul>
-          <li><a href="#hero" class="nav-link scrollto active"><FaHome/> <span>&nbsp;&nbsp;Home</span></a></li>
-          <li><a href="#about" class="nav-link scrollto">< FaUser/> <span>&nbsp;&nbsp;About</span></a></li>
-          <li><a href="#resume" class="nav-link scrollto"><FaFile/> <span>&nbsp;&nbsp;Resume</span></a></li>
-          <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
-          <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a></li>
-          <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
-        </ul>
-      </nav>
-      {/* Nav bar */}
-    </div>
   </header>
 
   <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
@@ -87,18 +98,18 @@ export default class
             <div class="row">
               <div class="col-lg-6">
                 <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>07 July 2001</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.example.com</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>9824289863</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Kathmandu, Nepal</span></li>
+                  <li><FaAngleRight/> <strong>Birthday:</strong> <span>07 July 2001</span></li>
+                  <li><FaAngleRight/> <strong>Website:</strong> <span>www.example.com</span></li>
+                  <li><FaAngleRight/> <strong>Phone:</strong> <span>9824289863</span></li>
+                  <li><FaAngleRight/> <strong>City:</strong> <span>Kathmandu, Nepal</span></li>
                 </ul>
               </div>
               <div class="col-lg-6">
                 <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>21</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Bachelors ongoing</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>prabesh065@gmail.com</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
+                  <li><FaAngleRight/> <strong>Age:</strong> <span>21</span></li>
+                  <li><FaAngleRight/> <strong>Degree:</strong> <span>Bachelors ongoing</span></li>
+                  <li><FaAngleRight/> <strong>Email:</strong> <span>prabesh065@gmail.com</span></li>
+                  <li><FaAngleRight/> <strong>Freelance:</strong> <span>Available</span></li>
                 </ul>
               </div>
             </div>
@@ -193,6 +204,76 @@ export default class
       </div>
     </section>
     {/* -- End Resume Section -- */}
+
+    {/* -- ======= Contact Section ======= -- */}
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="row" data-aos="fade-in">
+
+          <div class="col-lg-5 d-flex align-items-stretch">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>A108 Adam Street, New York, NY 535022</p>
+              </div>
+
+              <div class="email">
+                <BsEnvelope size="2em"/>
+                <h4>Email:</h4>
+                <p>info@example.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>+1 5589 55488 55s</p>
+              </div>
+
+               </div>
+
+          </div>
+
+          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <label for="name">Your Name</label>
+                  <input type="text" name="name" class="form-control" id="name" required/>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="name">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email" required/>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="name">Subject</label>
+                <input type="text" class="form-control" name="subject" id="subject" required/>
+              </div>
+              <div class="form-group">
+                <label for="name">Message</label>
+                <textarea class="form-control" name="message" rows="10" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    {/* -- End Contact Section -- */}
 
   </main>
   {/* End #main */}
