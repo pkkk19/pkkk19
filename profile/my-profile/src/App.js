@@ -24,7 +24,6 @@ export default class
       
       <div className={this.state.clicked ? 'mobile-nav-active' : ''}>
         <header id="header">
-       
         <button className={this.state.clicked ? 'bi mobile-nav-toggle d-xl-none-bi-x' : "bi mobile-nav-toggle d-xl-none bi-list"} onClick={this.handelClick}><i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i></button>
         
         <div class="d-flex flex-column">
@@ -53,7 +52,6 @@ export default class
 </nav>
 {/* Nav bar */}
 </div>
-
   </header>
 
   <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
