@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import profile from "./assets/img/profile-img.jpg";
 import CVPhoto from "./assets/img/CV.png";
 import CV from "./assets/files/Prabesh-Kumar-Shrestha-cv.pdf";
+
 import "./assets/css/style.css";
 import { Image, ProgressBar, Button } from "react-bootstrap";
 import Typed from "react-typed";
@@ -24,9 +25,11 @@ import {
   FaArrowDown,
 } from "react-icons/fa";
 import { BsGeoAlt } from "react-icons/bs";
-import { BiEnvelope, BiMobile } from "react-icons/bi";
+import { BiEnvelope, BiLink, BiMobile, BiPlus } from "react-icons/bi";
 import Scrollspy from "react-scrollspy";
+import tourImg from "./assets/img/Projects/tour-package-des.png";
 import ContactForm from "./contactForm";
+import portfolioDetails from "./portfolio-details";
 
 export default class extends Component {
   state = { clicked: false };
@@ -197,7 +200,7 @@ export default class extends Component {
                         </li>
                         <li>
                           <i><FaAngleRight /></i> <strong>Website:</strong>{" "}
-                          <span>www.example.com</span>
+                          <a a href="https://pkkk19.github.io/pkkk19/"><span>https://pkkk19.github.io/pkkk19/</span></a>
                         </li>
                         <li>
                           <i><FaAngleRight /></i> <strong>Phone:</strong>{" "}
@@ -216,7 +219,7 @@ export default class extends Component {
                         </li>
                         <li>
                           <i><FaAngleRight /></i> <strong>Degree:</strong>{" "}
-                          <span>Bachelors ongoing</span>
+                          <span>BSc (Hons) in Computer Science</span>
                         </li>
                         <li>
                           <i><FaAngleRight /></i> <strong>Email:</strong>{" "}
@@ -354,42 +357,29 @@ export default class extends Component {
                 </p>
               </div>
 
-              <div class="row" data-aos="fade-up">
-                <div class="col-lg-12 d-flex justify-content-center">
-                  <ul id="portfolio-flters">
-                    <li data-filter="*" class="filter-active">
-                      All
-                    </li>
-                    <li data-filter=".filter-app">App</li>
-                    <li data-filter=".filter-card">Card</li>
-                    <li data-filter=".filter-web">Web</li>
-                  </ul>
-                </div>
-              </div>
-
               <div
                 class="row portfolio-container"
                 data-aos="fade-up"
                 data-aos-delay="100"
               >
-                <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                <div class="col-lg-4 col-md-6 portfolio-item">
                   <div class="portfolio-wrap">
                     <img
-                      src="assets/img/portfolio/portfolio-1.jpg"
+                      src={tourImg}
                       class="img-fluid"
                       alt=""
                     />
                     <div class="portfolio-links">
                       <a
-                        href="assets/img/portfolio/portfolio-1.jpg"
+                        href={tourImg}
                         data-gallery="portfolioGallery"
                         class="portfolio-lightbox"
                         title="App 1"
                       >
-                        <i class="bx bx-plus"></i>
+                        <i><BiPlus/></i>
                       </a>
-                      <a href="portfolio-details.html" title="More Details">
-                        <i class="bx bx-link"></i>
+                      <a href={"/portfolio-details"} title="More Details">
+                        <i class="bx bx-link"><BiLink/></i>
                       </a>
                     </div>
                   </div>
@@ -627,12 +617,7 @@ export default class extends Component {
         </main>
         {/* End #main */}
 
-        <a
-          href="#"
-          class="back-to-top d-flex align-items-center justify-content-center"
-        >
-          <FaArrowUp />
-        </a>
+        <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"><FaArrowUp/></i></a>
       </div>
     );
   }
