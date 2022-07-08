@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import emailjs from "emailjs-com";
 import "bootstrap/dist/css/bootstrap.min.css";
 import profile from "./assets/img/profile-img.jpg";
 import CVPhoto from "./assets/img/CV.png";
@@ -14,20 +13,20 @@ import {
   FaInstagram,
   FaDiscord,
   FaLinkedinIn,
-  FaListUl,
   FaHome,
   FaUser,
   FaFile,
   FaCode,
-  FaServer,
   FaAngleRight,
-  FaArrowUp,
   FaArrowDown,
 } from "react-icons/fa";
 import { BsGeoAlt } from "react-icons/bs";
 import { BiEnvelope, BiLink, BiMobile, BiPlus } from "react-icons/bi";
 import Scrollspy from "react-scrollspy";
-import tourImg from "./assets/img/Projects/tour-package-des.png";
+import tourImg from "./assets/img/Projects/tour-landing.png";
+import Bhasa from "./assets/img/Projects/Bhasa.png";
+import cms from "./assets/img/Projects/cms.png";
+import weather from "./assets/img/Projects/weather.png";
 import ContactForm from "./contactForm";
 import portfolioDetails from "./portfolio-details";
 
@@ -279,6 +278,15 @@ export default class extends Component {
 
                   <div class="progress">
                     <span class="skill">
+                      Python <i class="val">80%</i>
+                    </span>
+                    <div class="progress-bar-wrap">
+                      <ProgressBar now={80} />
+                    </div>
+                  </div>
+
+                  <div class="progress">
+                    <span class="skill">
                       JavaScript <i class="val">75%</i>
                     </span>
                     <div class="progress-bar-wrap">
@@ -303,6 +311,16 @@ export default class extends Component {
                     </span>
                     <div class="progress-bar-wrap">
                       <ProgressBar now={90} />
+                    </div>
+                  </div>
+
+                  <div class="progress">
+                    <span class="skill">
+                      Java
+                      <i class="val">80%</i>
+                    </span>
+                    <div class="progress-bar-wrap">
+                      <ProgressBar now={80} />
                     </div>
                   </div>
 
@@ -379,7 +397,7 @@ export default class extends Component {
                         <i><BiPlus/></i>
                       </a>
                       <a href={"/portfolio-details"} title="More Details">
-                        <i class="bx bx-link"><BiLink/></i>
+                        <i><BiLink/></i>
                       </a>
                     </div>
                   </div>
@@ -388,7 +406,7 @@ export default class extends Component {
                 <div class="col-lg-4 col-md-6 portfolio-item filter-web">
                   <div class="portfolio-wrap">
                     <img
-                      src="assets/img/portfolio/portfolio-2.jpg"
+                      src={Bhasa}
                       class="img-fluid"
                       alt=""
                     />
@@ -399,10 +417,10 @@ export default class extends Component {
                         class="portfolio-lightbox"
                         title="Web 3"
                       >
-                        <i class="bx bx-plus"></i>
+                        <i><BiPlus/></i>
                       </a>
                       <a href="portfolio-details.html" title="More Details">
-                        <i class="bx bx-link"></i>
+                      <i><BiLink/></i>
                       </a>
                     </div>
                   </div>
@@ -411,7 +429,7 @@ export default class extends Component {
                 <div class="col-lg-4 col-md-6 portfolio-item filter-app">
                   <div class="portfolio-wrap">
                     <img
-                      src="assets/img/portfolio/portfolio-3.jpg"
+                      src={weather}
                       class="img-fluid"
                       alt=""
                     />
@@ -422,10 +440,10 @@ export default class extends Component {
                         class="portfolio-lightbox"
                         title="App 2"
                       >
-                        <i class="bx bx-plus"></i>
+                        <i><BiPlus/></i>
                       </a>
                       <a href="portfolio-details.html" title="More Details">
-                        <i class="bx bx-link"></i>
+                      <i><BiLink/></i>
                       </a>
                     </div>
                   </div>
@@ -434,7 +452,7 @@ export default class extends Component {
                 <div class="col-lg-4 col-md-6 portfolio-item filter-card">
                   <div class="portfolio-wrap">
                     <img
-                      src="assets/img/portfolio/portfolio-4.jpg"
+                      src={cms}
                       class="img-fluid"
                       alt=""
                     />
@@ -445,125 +463,10 @@ export default class extends Component {
                         class="portfolio-lightbox"
                         title="Card 2"
                       >
-                        <i class="bx bx-plus"></i>
+                        <i><BiPlus/></i>
                       </a>
                       <a href="portfolio-details.html" title="More Details">
-                        <i class="bx bx-link"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                  <div class="portfolio-wrap">
-                    <img
-                      src="assets/img/portfolio/portfolio-5.jpg"
-                      class="img-fluid"
-                      alt=""
-                    />
-                    <div class="portfolio-links">
-                      <a
-                        href="assets/img/portfolio/portfolio-5.jpg"
-                        data-gallery="portfolioGallery"
-                        class="portfolio-lightbox"
-                        title="Web 2"
-                      >
-                        <i class="bx bx-plus"></i>
-                      </a>
-                      <a href="portfolio-details.html" title="More Details">
-                        <i class="bx bx-link"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                  <div class="portfolio-wrap">
-                    <img
-                      src="assets/img/portfolio/portfolio-6.jpg"
-                      class="img-fluid"
-                      alt=""
-                    />
-                    <div class="portfolio-links">
-                      <a
-                        href="assets/img/portfolio/portfolio-6.jpg"
-                        data-gallery="portfolioGallery"
-                        class="portfolio-lightbox"
-                        title="App 3"
-                      >
-                        <i class="bx bx-plus"></i>
-                      </a>
-                      <a href="portfolio-details.html" title="More Details">
-                        <i class="bx bx-link"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-                  <div class="portfolio-wrap">
-                    <img
-                      src="assets/img/portfolio/portfolio-7.jpg"
-                      class="img-fluid"
-                      alt=""
-                    />
-                    <div class="portfolio-links">
-                      <a
-                        href="assets/img/portfolio/portfolio-7.jpg"
-                        data-gallery="portfolioGallery"
-                        class="portfolio-lightbox"
-                        title="Card 1"
-                      >
-                        <i class="bx bx-plus"></i>
-                      </a>
-                      <a href="portfolio-details.html" title="More Details">
-                        <i class="bx bx-link"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-                  <div class="portfolio-wrap">
-                    <img
-                      src="assets/img/portfolio/portfolio-8.jpg"
-                      class="img-fluid"
-                      alt=""
-                    />
-                    <div class="portfolio-links">
-                      <a
-                        href="assets/img/portfolio/portfolio-8.jpg"
-                        data-gallery="portfolioGallery"
-                        class="portfolio-lightbox"
-                        title="Card 3"
-                      >
-                        <i class="bx bx-plus"></i>
-                      </a>
-                      <a href="portfolio-details.html" title="More Details">
-                        <i class="bx bx-link"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                  <div class="portfolio-wrap">
-                    <img
-                      src="assets/img/portfolio/portfolio-9.jpg"
-                      class="img-fluid"
-                      alt=""
-                    />
-                    <div class="portfolio-links">
-                      <a
-                        href="assets/img/portfolio/portfolio-9.jpg"
-                        data-gallery="portfolioGallery"
-                        class="portfolio-lightbox"
-                        title="Web 3"
-                      >
-                        <i class="bx bx-plus"></i>
-                      </a>
-                      <a href="portfolio-details.html" title="More Details">
-                        <i class="bx bx-link"></i>
+                      <i><BiLink/></i>
                       </a>
                     </div>
                   </div>
@@ -616,8 +519,6 @@ export default class extends Component {
           {/* -- End Contact Section -- */}
         </main>
         {/* End #main */}
-
-        <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"><FaArrowUp/></i></a>
       </div>
     );
   }
