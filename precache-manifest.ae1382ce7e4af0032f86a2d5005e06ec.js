@@ -1,27 +1,27 @@
 self.__precacheManifest = [
   {
-    "revision": "bb96e728f3e7266cfa68",
-    "url": "/pkkk19/static/css/main.dd4071df.chunk.css"
+    "revision": "d08e473c8a618d1ebaee",
+    "url": "/pkkk19/static/css/main.ac07eb5e.chunk.css"
   },
   {
-    "revision": "bb96e728f3e7266cfa68",
-    "url": "/pkkk19/static/js/main.bb96e728.chunk.js"
+    "revision": "d08e473c8a618d1ebaee",
+    "url": "/pkkk19/static/js/main.d08e473c.chunk.js"
   },
   {
-    "revision": "897aa20ba8584a8a9d67",
-    "url": "/pkkk19/static/js/1.897aa20b.chunk.js"
+    "revision": "7ef873392d73c34b4b72",
+    "url": "/pkkk19/static/js/1.7ef87339.chunk.js"
   },
   {
-    "revision": "4d5ad9d8d8e66582feae",
-    "url": "/pkkk19/static/css/2.bdf9f113.chunk.css"
+    "revision": "7ed7b4334fdc7de4a0c6",
+    "url": "/pkkk19/static/css/2.baffc8fd.chunk.css"
   },
   {
-    "revision": "4d5ad9d8d8e66582feae",
-    "url": "/pkkk19/static/js/2.4d5ad9d8.chunk.js"
+    "revision": "7ed7b4334fdc7de4a0c6",
+    "url": "/pkkk19/static/js/2.7ed7b433.chunk.js"
   },
   {
-    "revision": "c0c047a7a67b0fec6adc",
-    "url": "/pkkk19/static/js/runtime~main.c0c047a7.js"
+    "revision": "9df82ea0504f77eef4ee",
+    "url": "/pkkk19/static/js/runtime~main.9df82ea0.js"
   },
   {
     "revision": "e8a0d07265de7977ba192ce96e88a096",
@@ -64,7 +64,7 @@ self.__precacheManifest = [
     "url": "/pkkk19/static/media/weather.8519044d.png"
   },
   {
-    "revision": "bec41525a4b2e789b23dbfddf3a15671",
+    "revision": "8c90441ff0a1bf80b426fa3b9272c252",
     "url": "/pkkk19/index.html"
   }
 ];
