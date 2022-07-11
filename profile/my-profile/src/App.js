@@ -23,12 +23,7 @@ import {
 import { BsGeoAlt } from "react-icons/bs";
 import { BiEnvelope, BiLink, BiMobile, BiPlus } from "react-icons/bi";
 import Scrollspy from "react-scrollspy";
-import tourImg from "./assets/img/Projects/tour-landing.png";
-import Bhasa from "./assets/img/Projects/Bhasa.png";
-import cms from "./assets/img/Projects/cms.png";
-import weather from "./assets/img/Projects/weather.png";
 import ContactForm from "./contactForm";
-import portfolioDetails from "./portfolio-details";
 
 export default class extends Component {
   state = { clicked: false };
@@ -122,15 +117,6 @@ export default class extends Component {
                     </a>
                   </li>
                   <li>
-                    <a href="#portfolio" class="nav-link scrollto">
-                      <i>
-                        <FaCode />
-                      </i>{" "}
-                      <span>&nbsp;&nbsp;Portfolio</span>
-                    </a>
-                  </li>
-
-                  <li>
                     <a href="#contact" class="nav-link scrollto">
                       <i>
                         <BiEnvelope />
@@ -185,7 +171,7 @@ export default class extends Component {
                   <Image src={profile} fluid className="about-profile"></Image>
                 </div>
                 <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-                  <h3>UI/UX Designer &amp; Web Developer.</h3>
+                  <h3>Web Developer.</h3>
                   <p class="fst-italic">
                     I build professional full stack websites using django,
                     django REST Framework and react.js.
@@ -194,39 +180,61 @@ export default class extends Component {
                     <div class="col-lg-6">
                       <ul>
                         <li>
-                          <i><FaAngleRight /></i> <strong>Birthday:</strong>{" "}
-                          <span>07 July 2001</span>
+                          <i>
+                            <FaAngleRight />
+                          </i>{" "}
+                          <strong>Birthday:</strong> <span>08 July 2001</span>
                         </li>
                         <li>
-                          <i><FaAngleRight /></i> <strong>Website:</strong>{" "}
-                          <a a href="https://pkkk19.github.io/pkkk19/"><span>https://pkkk19.github.io/pkkk19/</span></a>
+                          <i>
+                            <FaAngleRight />
+                          </i>{" "}
+                          <strong>Website:</strong>{" "}
+                          <a a href="https://pkkk19.github.io/pkkk19/">
+                            <span>https://pkkk19.github.io/pkkk19/</span>
+                          </a>
                         </li>
                         <li>
-                          <i><FaAngleRight /></i> <strong>Phone:</strong>{" "}
-                          <span>9824289863</span>
+                          <i>
+                            <FaAngleRight />
+                          </i>{" "}
+                          <strong>Phone:</strong> <span>9824289863</span>
                         </li>
                         <li>
-                          <i><FaAngleRight /> </i><strong>City:</strong>{" "}
-                          <span>Kathmandu, Nepal</span>
+                          <i>
+                            <FaAngleRight />{" "}
+                          </i>
+                          <strong>City:</strong> <span>Kathmandu, Nepal</span>
                         </li>
                       </ul>
                     </div>
                     <div class="col-lg-6">
                       <ul>
                         <li>
-                          <i><FaAngleRight /></i> <strong>Age:</strong> <span>21</span>
+                          <i>
+                            <FaAngleRight />
+                          </i>{" "}
+                          <strong>Age:</strong> <span>21</span>
                         </li>
                         <li>
-                          <i><FaAngleRight /></i> <strong>Degree:</strong>{" "}
+                          <i>
+                            <FaAngleRight />
+                          </i>{" "}
+                          <strong>Degree:</strong>{" "}
                           <span>BSc (Hons) in Computer Science</span>
                         </li>
                         <li>
-                          <i><FaAngleRight /></i> <strong>Email:</strong>{" "}
+                          <i>
+                            <FaAngleRight />
+                          </i>{" "}
+                          <strong>Email:</strong>{" "}
                           <span>prabesh065@gmail.com</span>
                         </li>
                         <li>
-                          <i><FaAngleRight /></i> <strong>Freelance:</strong>{" "}
-                          <span>Available</span>
+                          <i>
+                            <FaAngleRight />
+                          </i>{" "}
+                          <strong>Freelance:</strong> <span>Available</span>
                         </li>
                       </ul>
                     </div>
@@ -249,10 +257,8 @@ export default class extends Component {
                 <h2>Skills</h2>
                 <p>
                   Python, Java and JavaScript are my most used programming
-                  language because most of the software can be easily built
-                  using only these three languages and their frameworks. Beside
-                  programming, I also have some soft skills like great
-                  communication, leadership and Work ethic.
+                  language. Beside programming, I also have some soft skills
+                  like great communication, leadership and Work ethic.
                 </p>
               </div>
 
@@ -360,122 +366,9 @@ export default class extends Component {
             </div>
           </section>
           {/* -- End Resume Section -- */}
-          <br/>
-          {/* -- ======= Portfolio Section ======= -- */}
-          <section id="portfolio" class="portfolio section-bg">
-            <div class="container">
-              <div class="section-title">
-                <h2>Portfolio</h2>
-                <p>
-                  Magnam dolores commodi suscipit. Necessitatibus eius
-                  consequatur ex aliquid fuga eum quidem. Sit sint consectetur
-                  velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit
-                  suscipit alias ea. Quia fugiat sit in iste officiis commodi
-                  quidem hic quas.
-                </p>
-              </div>
+          <br />
 
-              <div
-                class="row portfolio-container"
-                data-aos="fade-up"
-                data-aos-delay="100"
-              >
-                <div class="col-lg-4 col-md-6 portfolio-item">
-                  <div class="portfolio-wrap">
-                    <img
-                      src={tourImg}
-                      class="img-fluid"
-                      alt=""
-                    />
-                    <div class="portfolio-links">
-                      <a
-                        href={tourImg}
-                        data-gallery="portfolioGallery"
-                        class="portfolio-lightbox"
-                        title="App 1"
-                      >
-                        <i><BiPlus/></i>
-                      </a>
-                      <a href={"/portfolio-details"} title="More Details">
-                        <i><BiLink/></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                  <div class="portfolio-wrap">
-                    <img
-                      src={Bhasa}
-                      class="img-fluid"
-                      alt=""
-                    />
-                    <div class="portfolio-links">
-                      <a
-                        href="assets/img/portfolio/portfolio-2.jpg"
-                        data-gallery="portfolioGallery"
-                        class="portfolio-lightbox"
-                        title="Web 3"
-                      >
-                        <i><BiPlus/></i>
-                      </a>
-                      <a href="portfolio-details.html" title="More Details">
-                      <i><BiLink/></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                  <div class="portfolio-wrap">
-                    <img
-                      src={weather}
-                      class="img-fluid"
-                      alt=""
-                    />
-                    <div class="portfolio-links">
-                      <a
-                        href="assets/img/portfolio/portfolio-3.jpg"
-                        data-gallery="portfolioGallery"
-                        class="portfolio-lightbox"
-                        title="App 2"
-                      >
-                        <i><BiPlus/></i>
-                      </a>
-                      <a href="portfolio-details.html" title="More Details">
-                      <i><BiLink/></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-                  <div class="portfolio-wrap">
-                    <img
-                      src={cms}
-                      class="img-fluid"
-                      alt=""
-                    />
-                    <div class="portfolio-links">
-                      <a
-                        href="assets/img/portfolio/portfolio-4.jpg"
-                        data-gallery="portfolioGallery"
-                        class="portfolio-lightbox"
-                        title="Card 2"
-                      >
-                        <i><BiPlus/></i>
-                      </a>
-                      <a href="portfolio-details.html" title="More Details">
-                      <i><BiLink/></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-          {/* -- End Portfolio Section -- */}
-<br/>
+          <br />
           {/* -- ======= Contact Section ======= -- */}
           <section id="contact" class="contact">
             <div class="container">

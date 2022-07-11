@@ -7,15 +7,10 @@ import {
   FaInstagram,
   FaDiscord,
   FaLinkedinIn,
-  FaListUl,
   FaHome,
   FaUser,
   FaFile,
   FaCode,
-  FaServer,
-  FaAngleRight,
-  FaArrowUp,
-  FaArrowDown,
 } from "react-icons/fa";
 import { BiEnvelope } from "react-icons/bi";
 import product from "./assets/img/Projects/tour-package-des.png";
