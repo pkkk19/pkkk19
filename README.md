@@ -17,8 +17,6 @@ Skills:  REACT / JS / HTML / CSS / Flutter
 
 ![GitHub stats](https://github-readme-stats.vercel.app/api?username=pkkk19&show_icons=true&count_private=true)  
 
-![GitHub Activity Graph](https://activity-graph.herokuapp.com/graph?username=pkkk19)  
-
 ![GitHub metrics](https://metrics.lecoq.io/pkkk19)  
 
 ![GitHub streak stats](https://streak-stats.demolab.com/?user=pkkk19)  
