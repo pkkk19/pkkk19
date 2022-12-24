@@ -3,3 +3,4 @@
 -          1. Discord: pkkk#7034
 -          2. Website: https://pkkk19.github.io/pkkk19/
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=pkkk19&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
+[![willianrod's wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=pkkk19layout=compact)](https://github.com/anuraghazra/github-readme-stats)
