@@ -14,15 +14,16 @@ Skills:  REACT / JS / HTML / CSS / Flutter
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=pkkk19)](https://github.com/anuraghazra/github-readme-stats)
 
+![GitHub streak stats](https://streak-stats.demolab.com/?user=pkkk19) 
+
 ![snake gif](https://github.com/pkkk19/pkkk19/blob/output/github-contribution-grid-snake.gif#gh-dark-mode-only)
 
 [![trophy](https://github-profile-trophy.vercel.app/?username=pkkk19)](https://github.com/ryo-ma/github-profile-trophy)
 
 ![GitHub stats](https://github-readme-stats.vercel.app/api?username=pkkk19&show_icons=true&count_private=true)  
-![GitHub streak stats](https://streak-stats.demolab.com/?user=pkkk19) 
+
+
 
 ![GitHub metrics](https://metrics.lecoq.io/pkkk19)  
-
-![GitHub streak stats](https://streak-stats.demolab.com/?user=pkkk19)  
 
 ![Profile views](https://gpvc.arturio.dev/pkkk19)  
