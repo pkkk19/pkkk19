@@ -16,12 +16,13 @@ import {
   FaHome,
   FaUser,
   FaFile,
-  FaCode,
   FaAngleRight,
   FaArrowDown,
+  FaReact,
 } from "react-icons/fa";
+import{SiJava, SiJavascript, SiNextdotjs} from "react-icons/si";
 import { BsGeoAlt } from "react-icons/bs";
-import { BiEnvelope, BiLink, BiMobile, BiPlus } from "react-icons/bi";
+import { BiEnvelope, BiMobile } from "react-icons/bi";
 import Scrollspy from "react-scrollspy";
 import ContactForm from "./contactForm";
 
@@ -141,7 +142,7 @@ export default class extends Component {
               I
               <Typed
                 strings={[
-                  "'m a Full-Stack Developer.",
+                  "'m a Front-End Web Developer.",
                   "&nbsp; Love Software Development.",
                 ]}
                 typeSpeed={140}
@@ -173,8 +174,7 @@ export default class extends Component {
                 <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
                   <h3>Web Developer.</h3>
                   <p class="fst-italic">
-                    I build professional full stack websites using django,
-                    django REST Framework and react.js.
+                  I am currently working at softechtonic as a intern for Front-end web development.
                   </p>
                   <div class="row">
                     <div class="col-lg-6">
@@ -189,16 +189,16 @@ export default class extends Component {
                           <i>
                             <FaAngleRight />
                           </i>{" "}
-                          <strong>Website:</strong>{" "}
-                          <a a href="https://pkkk19.github.io/pkkk19/">
-                            <span>https://pkkk19.github.io/pkkk19/</span>
+                          <strong>Github:</strong>{" "}
+                          <a a href="https://github.com/pkkk19">
+                            <span>https://github.com/pkkk19</span>
                           </a>
                         </li>
                         <li>
                           <i>
                             <FaAngleRight />
                           </i>{" "}
-                          <strong>Phone:</strong> <span>9824289863</span>
+                          <strong>Phone:</strong> <span>+977 9824289863</span>
                         </li>
                         <li>
                           <i>
@@ -256,7 +256,7 @@ export default class extends Component {
               <div class="section-title">
                 <h2>Skills</h2>
                 <p>
-                  Python, Java and JavaScript are my most used programming
+                  Python, Java, TypeScript and JavaScript are my most used programming
                   language. Beside programming, I also have some soft skills
                   like great communication, leadership and Work ethic.
                 </p>
@@ -264,81 +264,17 @@ export default class extends Component {
 
               <div class="row skills-content">
                 <div class="col-lg-6" data-aos="fade-up">
-                  <div class="progress">
-                    <span class="skill">
-                      HTML <i class="val">100%</i>
-                    </span>
-                    <div class="progress-bar-wrap">
-                      <ProgressBar now={100} />
-                    </div>
-                  </div>
-
-                  <div class="progress">
-                    <span class="skill">
-                      CSS <i class="val">90%</i>
-                    </span>
-                    <div class="progress-bar-wrap">
-                      <ProgressBar now={90} />
-                    </div>
-                  </div>
-
-                  <div class="progress">
-                    <span class="skill">
-                      Python <i class="val">80%</i>
-                    </span>
-                    <div class="progress-bar-wrap">
-                      <ProgressBar now={80} />
-                    </div>
-                  </div>
-
-                  <div class="progress">
-                    <span class="skill">
-                      JavaScript <i class="val">75%</i>
-                    </span>
-                    <div class="progress-bar-wrap">
-                      <ProgressBar now={75} />
-                    </div>
-                  </div>
+                 
+                 <SiJavascript size={50} color={"#f0db4f"}/>
+                 <FaReact size={50} color={"#88dded"}/>
+                 
+                 <SiNextdotjs size={50}/>
+                 
                 </div>
 
-                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-                  <div class="progress">
-                    <span class="skill">
-                      PHP <i class="val">80%</i>
-                    </span>
-                    <div class="progress-bar-wrap">
-                      <ProgressBar now={80} />
-                    </div>
-                  </div>
-
-                  <div class="progress">
-                    <span class="skill">
-                      WordPress/CMS <i class="val">90%</i>
-                    </span>
-                    <div class="progress-bar-wrap">
-                      <ProgressBar now={90} />
-                    </div>
-                  </div>
-
-                  <div class="progress">
-                    <span class="skill">
-                      Java
-                      <i class="val">80%</i>
-                    </span>
-                    <div class="progress-bar-wrap">
-                      <ProgressBar now={80} />
-                    </div>
-                  </div>
-
-                  <div class="progress">
-                    <span class="skill">
-                      Photoshop <i class="val">55%</i>
-                    </span>
-                    <div class="progress-bar-wrap">
-                      <ProgressBar now={55} />
-                    </div>
-                  </div>
-                </div>
+                
+               
+             
               </div>
             </div>
           </section>
