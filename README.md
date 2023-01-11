@@ -10,9 +10,6 @@ I'm a front-end developer with a strong focus on building intuitive and visually
 ## Socials:
 [<img src='https://user-images.githubusercontent.com/80454765/209445810-c0317144-2f4f-460c-84c1-0af7b7c8f56a.png' alt='github' height='40'>](https://github.com/pkkk19)  [<img src='https://user-images.githubusercontent.com/80454765/209446032-ed367e6d-7013-4780-9f0f-04bf3a60a30b.png' height='40'>](https://www.linkedin.com/in/www.linkedin.com/in/prabesh-kumar-shrestha-281394195/)  [<img src='https://user-images.githubusercontent.com/80454765/209445959-91ce58cc-af81-4734-9431-09df28e32ea1.png' alt='website' height='40'>](https://pkkk19.github.io/pkkk19/)  [<img src='https://user-images.githubusercontent.com/80454765/209445987-ca0f96e6-0c45-44da-a351-85349c6ef9f6.png' alt='discord' height='40'>](Прабэш#7034)  
 
-## Badges:
-<a href='https://archiveprogram.github.com/'><img src='https://raw.githubusercontent.com/acervenky/animated-github-badges/master/assets/acbadge.gif' width='40' height='40'></a> <a href='https://docs.github.com/en/developers'><img src='https://raw.githubusercontent.com/acervenky/animated-github-badges/master/assets/devbadge.gif' width='40' height='40'></a> <a href='https://github.com/pricing'><img src='https://raw.githubusercontent.com/acervenky/animated-github-badges/master/assets/pro.gif' width='40' height='40'></a> <a href='https://stars.github.com/'><img src='https://raw.githubusercontent.com/acervenky/animated-github-badges/master/assets/starbadge.gif' width='35' height='35'></a> <a href='https://docs.github.com/en/github/supporting-the-open-source-community-with-github-sponsors'><img src='https://raw.githubusercontent.com/acervenky/animated-github-badges/master/assets/sponsorbadge.gif' width='35' height='35'></a> 
-
 
 
 
