@@ -16,7 +16,7 @@ I'm a front-end developer with a strong focus on building intuitive and visually
 
 [![GitHub Streak](https://streak-stats.demolab.com/?user=pkkk19&theme=android-dark)](https://git.io/streak-stats)  ![GitHub stats](https://github-readme-stats.vercel.app/api?username=pkkk19&show_icons=true&count_private=true&theme=chartreuse-dark)  [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=pkkk19&layout=compact)](https://github.com/pkkk19/github-readme-stats)
 
-<!-- ![snake gif](https://github.com/pkkk19/pkkk19/blob/output/github-contribution-grid-snake.gif#gh-dark-mode-only) -->
+![snake gif](https://github.com/pkkk19/pkkk19/blob/output/github-contribution-grid-snake.gif#gh-dark-mode-only)
 
 ## Trophies:
 [![trophy](https://github-profile-trophy.vercel.app/?username=pkkk19&theme=matrix)](https://github.com/ryo-ma/github-profile-trophy)
