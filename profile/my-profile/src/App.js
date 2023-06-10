@@ -20,7 +20,7 @@ import {
   FaArrowDown,
   FaReact,
 } from "react-icons/fa";
-import{SiJava, SiJavascript, SiNextdotjs} from "react-icons/si";
+import{SiJavascript, SiNextdotjs} from "react-icons/si";
 import { BsGeoAlt } from "react-icons/bs";
 import { BiEnvelope, BiMobile } from "react-icons/bi";
 import Scrollspy from "react-scrollspy";
@@ -93,7 +93,7 @@ export default class extends Component {
                   items={["hero", "about", "resume", "portfolio", "contact"]}
                   currentClassName="active"
                 >
-                  <li>
+                  <li onClick={this.state.clicked?this.handelClick : ""}>
                     <a href="#hero" class="nav-link scrollto">
                       <i>
                         <FaHome />
@@ -101,7 +101,7 @@ export default class extends Component {
                       <span>&nbsp;&nbsp;Home</span>
                     </a>
                   </li>
-                  <li>
+                  <li onClick={this.state.clicked?this.handelClick : ""}>
                     <a href="#about" class="nav-link scrollto">
                       <i>
                         <FaUser />
@@ -109,7 +109,7 @@ export default class extends Component {
                       <span>&nbsp;&nbsp;About</span>
                     </a>
                   </li>
-                  <li>
+                  <li onClick={this.state.clicked?this.handelClick : ""}>
                     <a href="#resume" class="nav-link scrollto">
                       <i>
                         <FaFile />
@@ -117,7 +117,7 @@ export default class extends Component {
                       <span>&nbsp;&nbsp;Resume</span>
                     </a>
                   </li>
-                  <li>
+                  <li onClick={this.state.clicked?this.handelClick : ""}>
                     <a href="#contact" class="nav-link scrollto">
                       <i>
                         <BiEnvelope />
@@ -133,6 +133,7 @@ export default class extends Component {
         </header>
 
         <section
+        width = "100%"
           id="hero"
           class="d-flex flex-column justify-content-center align-items-center"
         >
@@ -155,7 +156,7 @@ export default class extends Component {
 
         <main id="main">
           {/* -- ======= About Section ======= -- */}
-          <section id="about" class="about">
+          <section height = "100vh" id="about" class="about">
             <div class="container">
               <div class="section-title">
                 <h2>About</h2>

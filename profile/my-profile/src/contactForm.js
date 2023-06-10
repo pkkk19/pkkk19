@@ -1,6 +1,31 @@
 
 import React, { useRef } from 'react';
 import emailjs from 'emailjs-com';
+import Button from 'react-bootstrap/Button';
+import Modal from 'react-bootstrap/Modal';
+import { FaCheckCircle } from 'react-icons/fa';
+
+function MyVerticallyCenteredModal(props) {
+  return (
+    <Modal
+      {...props}
+      aria-labelledby="contained-modal-title-vcenter"
+      centered
+    >
+      
+      <Modal.Header closeButton>
+        <Modal.Title id="contained-modal-title-vcenter">
+          Message has been sent
+        </Modal.Title>
+      </Modal.Header>
+      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '200px' }}>
+    <FaCheckCircle size={100} color={"#00fa9a"} />
+  </div>
+      
+    </Modal>
+  );
+}
+
 
 export default function ContactUS() {
   const form = useRef();
@@ -15,7 +40,11 @@ export default function ContactUS() {
           console.log(error.text);
       });
       form.current.reset();
+
+      setModalShow(true);
   };
+
+  const [modalShow, setModalShow] = React.useState(false);
 
   return (
     <>
@@ -46,6 +75,10 @@ export default function ContactUS() {
               </div>
               <div class="text-center"><button type="submit">Send Message</button></div>
             </form>
+            <MyVerticallyCenteredModal
+        show={modalShow}
+        onHide={() => setModalShow(false)}
+      />
           </div>
     </>
   );
