@@ -162,7 +162,7 @@ export default class extends Component {
                 <h2>About</h2>
                 <p>
                   I am a hard-working and driven individual who isn't afraid to
-                  face a challange. I'm passonate about my work and I know how
+                  face a challenge. I'm passionate about my work and I know how
                   to get the job done. I would describe myself as an open and
                   honest individual.
                 </p>
@@ -175,7 +175,7 @@ export default class extends Component {
                 <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
                   <h3>Web Developer.</h3>
                   <p class="fst-italic">
-                  I am currently working at softechtonic as a intern for Front-end web development.
+                  I am currently working as a freelancer.
                   </p>
                   <div class="row">
                     <div class="col-lg-6">
@@ -241,9 +241,9 @@ export default class extends Component {
                     </div>
                   </div>
                   <p>
-                    I have been coding since couple of years and have a good
-                    experience in web development. Currently I am studying BSc.
-                    (hons) in computer science in Herald College Kathmandu.
+                    I have been coding for a couple of years and have a good
+                    experience in web development. I have completed my study BSc.
+                    (Hons) in computer science at Herald College Kathmandu which is affiliated by the University of Wolverhampton.
                   </p>
                 </div>
               </div>
@@ -257,9 +257,9 @@ export default class extends Component {
               <div class="section-title">
                 <h2>Skills</h2>
                 <p>
-                  Python, Java, TypeScript and JavaScript are my most used programming
-                  language. Beside programming, I also have some soft skills
-                  like great communication, leadership and Work ethic.
+                  I have worked with languages like Python, Java, TypeScript, and JavaScript but I prefer working with typescript and javascript using frameworks like react.js, and Next.js, and for mobile platforms, I have worked with FLutter
+                  for backend I have used Fast API and Django. Besides programming, I also have some soft skills
+                  like great communication, leadership, and Work ethic.
                 </p>
               </div>
 
