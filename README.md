@@ -22,6 +22,9 @@ I'm an aspiring Data Analyst passionate about turning data into actionable insig
 [![GitHub Streak](https://streak-stats.demolab.com/?user=pkkk19&theme=android-dark)](https://git.io/streak-stats)
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=pkkk19&layout=compact)](https://github.com/pkkk19/github-readme-stats)
 
+## 🔥 Featured Projects
+- **[Multiple Linear Regression-Bike Sharing](https://github.com/pkkk19/Multiple-Linear-Regression-Bike-Sharing)**: I successfully modeled the demand for shared bikes using the available independent variables. This model provides valuable insights into how demand fluctuates based on various factors, enabling management to make informed decisions and adjust business strategies accordingly. The model also offers a solid foundation for understanding demand patterns in new markets, helping the company better meet customer expectations and optimize its service offerings.
+
 ## 📫 Let's Connect!
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](www.linkedin.com/in/prabesh-kumar-shrestha-281394195)
