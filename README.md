@@ -2,7 +2,7 @@
 
 I'm an aspiring Data Analyst passionate about turning data into actionable insights. I love working on real-world projects, exploring machine-learning models, and visualizing data in creative ways. 
 
-🌱 Currently pursuing my postgraduate degree in [Your Field] and building my skills in Python, SQL, and data visualization tools.
+🌱 Currently pursuing my postgraduate degree in Data Science and building my skills in Python, SQL, and data visualization tools.
 
 
 ## 🛠️ Skills & Tools
